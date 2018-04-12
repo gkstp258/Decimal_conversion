@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>BK</title>
+</head>
+<body>
+<center>
+<h1>진수변환</h1>
+<p style="line-height: 30px">
+	<label>10진수</label>
+	<input onkeyup="hex.value=parseInt(this.value).toString(16);bin.value=parseInt(this.value).toString(2);oct.value=parseInt(this.value).toString(8);" id="dec" name="dec">
+</p>
+<p style="line-height: 30px">
+	<label>16진수</label>
+	<input onkeyup="dec.value=parseInt(this.value, 16);bin.value=parseInt(this.value, 16).toString(2);oct.value=parseInt(this.value, 16).toString(8);" id="hex" name="hex">
+</p>
+<p style="line-height: 30px">
+	<label>2진수</label>
+	<input onkeyup="dec.value=parseInt(this.value, 2);hex.value=parseInt(this.value, 2).toString(16);oct.value=parseInt(this.value, 2).toString(8);" id="bin" name="bin">
+</p>
+<p style="line-height: 30px">
+	<label>8진수</label>
+	<input onkeyup="dec.value=parseInt(this.value, 8);hex.value=parseInt(this.value, 8).toString(16);bin.value=parseInt(this.value, 8).toString(2);" id="oct" name="oct">
+</p>
+</center>
+</body>
+</html>
